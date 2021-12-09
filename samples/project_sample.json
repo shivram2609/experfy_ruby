@@ -1,0 +1,56 @@
+{
+  "transformations": [
+    {
+      "function": "symbolize_keys"
+    },
+    {
+      "function": "rename_keys",
+      "args": {
+        "old_key": "description",
+        "new_key": "project_description"
+      }
+    },
+    {
+      "function": "nest",
+      "args": {
+        "name": "overview",
+        "keys": ["title", "description", "responsibilities", "start_date", "end_date"]
+      }
+    },
+    {
+      "function": "nest",
+      "args": {
+        "name": "expertise",
+        "keys": ["skills-attributes", "tools-attributes"]
+      }
+    },
+    {
+      "function": "nest",
+      "args": {
+        "name": "questions",
+        "keys": ["questions-attributes", "us-legal-entity", "deloitte-ppmd", "deloitte-market-offering"]
+      }
+    },
+    {
+      "function": "reject_keys",
+      "args": {
+        "keys": ["start_date", "end_date"]
+      }
+    },
+    {
+      "function": "unwrap",
+      "args": {
+        "name": "relationships",
+        "keys": ["skills"]
+      }
+    },
+    {
+      "function": "uppcase_value",
+      "key": "state"
+    },
+    {
+      "function": "downcase_value",
+      "key": "hiring-manager-first-name"
+    }
+  ]
+}

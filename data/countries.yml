@@ -1,0 +1,15 @@
+"United States": 
+  :country_code: "1"
+  :national_dialing_prefix: "1"
+  :char_2_code: "1"
+  :char_3_code: US
+  :name: "United States"
+  :international_dialing_prefix: "11"
+"Bosnia and Herzegovina": 
+  :country_code: "387"
+  :national_dialing_prefix: "0"
+  :char_2_code: "0"
+  :char_3_code: BA
+  :name: "Bosnia and Herzegovina"
+  :international_dialing_prefix: "0"
+  :area_code: "[0-9][0-9]"
